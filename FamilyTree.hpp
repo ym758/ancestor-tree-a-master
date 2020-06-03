@@ -1,26 +1,27 @@
 #pragma once
 #include <string>
 #include <iostream>
+using namespace std;//
 namespace family{
 class Tree{
 
 public:
-struct Node* root;
-    Node* T;
+struct Node* root;//
     Tree();
     ~Tree();
-    Tree(std::string a);
-    Tree& t(std::string a);
+    Tree(std::string root);
+    Tree& T(std::string child);
     Tree& addFather(std::string child,std::string father);
     Tree& addMother(std::string child,std::string mother);
     std::string relation(std::string name);
-    std::string find(std::string nameorrelation);
-    void remove(std::string a);
+    std::string find(std::string relation);
+    //void remove(std::string a);
     void display();
     void remove(std::string name);
 private:
-void addFather (Node* t, std::string child, std::string father, int count);
-void addMother (Node* t, std::string child, std::string mother, int count);
+void addFat (Node* t, std::string child, std::string father, int count);
+void addMot (Node* t, std::string child, std::string mother, int count);
+void disp(Node* t, int n);
 std::string locatinName(Node* t,std::string relation);
         std::string locationRelation(Node* t,std::string name);
    void remove(Node* t,std::string name);
