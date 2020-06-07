@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 using namespace std;//
-namespace family{
+namespace family{//****///
 class Tree{
 
 public:
@@ -25,8 +25,8 @@ void addMot (Node* t, std::string child, std::string mother, int count);
 void disp(Node* root, int n);
 std::string locatinName(Node* t,std::string relation);
         std::string locationRelation(Node* t,std::string name);//Tree
-   void remove(Node* t,std::string name);
-        void freeAll(Node* t);
+   void remove1(Node* t,std::string name);
+        void freeALL(Node* t);
 };
 
 
